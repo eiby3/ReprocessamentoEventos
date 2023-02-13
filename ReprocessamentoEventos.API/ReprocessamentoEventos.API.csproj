@@ -14,7 +14,6 @@
   <ItemGroup>
     <ProjectReference Include="..\ReprocessamentoEventos.Application\ReprocessamentoEventos.Application.csproj" />
     <ProjectReference Include="..\ReprocessamentoEventos.Core\ReprocessamentoEventos.Core.csproj" />
-    <ProjectReference Include="..\ReprocessamentoEventos.Infrastructure\ReprocessamentoEventos.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

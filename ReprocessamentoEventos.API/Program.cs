@@ -1,7 +1,7 @@
+using ReprocessamentoEventos.Application.Services.MontagemListas;
+using ReprocessamentoEventos.Application.Services.Reprocessamento;
+using ReprocessamentoEventos.Application.Services.SeparadorDeIdentificadorEvento;
 using ReprocessamentoEventos.Core.Services;
-using ReprocessamentoEventos.Infrastructure.MontagemListas;
-using ReprocessamentoEventos.Infrastructure.Reprocessamento;
-using ReprocessamentoEventos.Infrastructure.SeparadorDeIdentificadorEvento;
 
 var builder = WebApplication.CreateBuilder(args);
 
