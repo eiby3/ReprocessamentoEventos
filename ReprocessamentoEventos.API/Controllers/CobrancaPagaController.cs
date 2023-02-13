@@ -19,7 +19,7 @@ namespace ReprocessamentoEventos.API.Controllers
             _montagemLista = montagemLista;
             _separadorIdentificador = separadorIdentificador;
         }
-        [HttpGet]
+        [HttpGet("json")]
         public IActionResult GetJson([FromQuery] string cobranca)
         {
             var identificadores = _separadorIdentificador.SeparadorEvento(cobranca);

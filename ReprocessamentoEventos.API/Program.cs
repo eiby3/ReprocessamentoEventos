@@ -1,4 +1,5 @@
 using ReprocessamentoEventos.Application.Services.MontagemListas;
+using ReprocessamentoEventos.Application.Services.Queries;
 using ReprocessamentoEventos.Application.Services.Reprocessamento;
 using ReprocessamentoEventos.Application.Services.SeparadorDeIdentificadorEvento;
 using ReprocessamentoEventos.Core.Services;
@@ -15,6 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IReprocessamentoService, ReprocessamentoService>();
 builder.Services.AddScoped<IMontagemListasService, MontagemListasService>();
 builder.Services.AddScoped<ISeparadorDeIdentificadorEventoService, SeparadorDeIdentificadorEventoService>();
+builder.Services.AddScoped<IQueriesService, QueriesService>();
 
 var app = builder.Build();
 

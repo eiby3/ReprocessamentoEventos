@@ -20,7 +20,7 @@ namespace ReprocessamentoEventos.API.Controllers
             _montagemLista = montagemLista;
             _separadorIdentificador = separadorIdentificador;
         }
-        [HttpGet]
+        [HttpGet("json")]
         public IActionResult GetJson([FromQuery]string itemCertificado, [FromQuery]string inscricao)
         {
             var identificadores = _separadorIdentificador.SeparadorEvento(itemCertificado, inscricao);

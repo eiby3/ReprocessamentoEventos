@@ -21,7 +21,7 @@ namespace ReprocessamentoEventos.API.Controllers
             _montagemLista = montagemLista;
             _separadorIdentificador = separadorIdentificador;
         }
-        [HttpGet]
+        [HttpGet("json")]
         public IActionResult GetJson([FromQuery] string proposta)
         {
             var identificadores = _separadorIdentificador.SeparadorEvento(proposta);
@@ -34,5 +34,6 @@ namespace ReprocessamentoEventos.API.Controllers
             }
             return Ok(JsonSerializer.Serialize(listaViewModel, new JsonSerializerOptions { WriteIndented = true }));
         }
+
     }
 }
